@@ -2,38 +2,52 @@
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>ارتباط با ما</title>
+  <title>یاد معمار یزد</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       font-family: sans-serif;
       background-color: #f9f9f9;
       text-align: center;
-      padding: 50px;
+      padding: 40px 20px;
       direction: rtl;
     }
-    h1 {
-      color: #333;
-      margin-top: 20px;
-    }
-    a {
-      display: block;
-      margin: 15px auto;
-      padding: 12px 20px;
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
-      width: 280px;
-      font-size: 16px;
-    }
-    a.instagram { background-color: #E1306C; }
-    a.telegram { background-color: #229ED9; }
-    a.phone { background-color: #34A853; }
-    a:hover { opacity: 0.9; }
 
-    img.logo {
-      width: 150px;
+    .logo {
+      width: 140px;
       margin-bottom: 30px;
     }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 100px);
+      gap: 25px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .icon-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      font-size: 32px;
+      color: white;
+      border-radius: 20px;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+
+    .icon-link:hover {
+      opacity: 0.85;
+      transform: scale(1.1);
+    }
+
+    .instagram { background-color: #E1306C; }
+    .telegram  { background-color: #229ED9; }
+    .phone     { background-color: #34A853; }
+    .map       { background-color: #EA4335; }
   </style>
 </head>
 <body>
@@ -41,28 +55,37 @@
   <!-- لوگو -->
   <img src="logo.jpeg" alt="لوگو یاد معمار یزد" class="logo">
 
-  <h1>ارتباط با ما</h1>
+  <!-- آیکون‌ها به صورت گرید 2 ستونه -->
+  <div class="grid">
+    <!-- اینستاگرام‌ها -->
+    <a class="icon-link instagram" href="https://www.instagram.com/yazd_memar?igsh=c212ZzQyM2l5NmJo" target="_blank" title="یاد معمار یزد">
+      <i class="fab fa-instagram"></i>
+    </a>
 
-  <!-- لینک‌ها -->
-  <a class="instagram" href="https://www.instagram.com/yazd_memar?igsh=c212ZzQyM2l5NmJo" target="_blank">
-    یاد معمار یزد (اینستاگرام)
-  </a>
+    <a class="icon-link instagram" href="https://www.instagram.com/memarkavir_yazd?igsh=MTdzenkzcXMwb3p4bQ==" target="_blank" title="معمار کویر یزد">
+      <i class="fab fa-instagram"></i>
+    </a>
 
-  <a class="instagram" href="https://www.instagram.com/memarkavir_yazd?igsh=MTdzenkzcXMwb3p4bQ==" target="_blank">
-    معمار کویر یزد (اینستاگرام)
-  </a>
+    <!-- تلگرام -->
+    <a class="icon-link telegram" href="https://t.me/+fqfoMpusTZVlNzA0" target="_blank" title="تلگرام">
+      <i class="fab fa-telegram"></i>
+    </a>
 
-  <a class="telegram" href="https://t.me/+fqfoMpusTZVlNzA0" target="_blank">
-    تماس از طریق تلگرام
-  </a>
+    <!-- تلفن دفتر -->
+    <a class="icon-link phone" href="tel:+983538332010" title="دفتر">
+      <i class="fas fa-phone"></i>
+    </a>
 
-  <a class="phone" href="tel:+983538332010">
-    📞 دفتر: ۰۳۵‑۳۸۳۳۲۰۱۰
-  </a>
+    <!-- تلفن همراه -->
+    <a class="icon-link phone" href="tel:+989133558207" title="موبایل">
+      <i class="fas fa-mobile-alt"></i>
+    </a>
 
-  <a class="phone" href="tel:+989133558207">
-    📱 موبایل: ۰۹۱۳۳۵۵۸۲۰۷
-  </a>
+    <!-- گوگل مپ -->
+    <a class="icon-link map" href="https://maps.app.goo.gl/W6bhDeSqWm3Dtxbj7" target="_blank" title="مکان ما در گوگل">
+      <i class="fas fa-map-marker-alt"></i>
+    </a>
+  </div>
 
 </body>
 </html>
