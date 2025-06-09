@@ -2,28 +2,35 @@
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>یاد معمار یزد</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yazd Memar</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
-      font-family: sans-serif;
+      font-family: 'Tahoma', sans-serif;
+      margin: 0;
+      padding: 0;
       background-color: #f9f9f9;
       text-align: center;
-      padding: 40px 20px;
-      direction: rtl;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
     }
 
     .logo {
-      width: 140px;
-      margin-bottom: 30px;
+      max-width: 150px;
+      margin: 20px auto;
+      display: block;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(2, 100px);
-      gap: 25px;
-      justify-content: center;
-      align-items: center;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      justify-items: center;
       margin-top: 30px;
     }
 
@@ -31,61 +38,67 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      background-color: #fff;
       width: 80px;
       height: 80px;
-      font-size: 32px;
-      color: white;
       border-radius: 20px;
-      transition: transform 0.2s, opacity 0.2s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+      font-size: 30px;
+      color: #444;
+      text-decoration: none;
     }
 
     .icon-link:hover {
-      opacity: 0.85;
       transform: scale(1.1);
     }
 
-    .instagram { background-color: #E1306C; }
-    .telegram  { background-color: #229ED9; }
-    .phone     { background-color: #34A853; }
-    .map       { background-color: #EA4335; }
+    .instagram { color: #E1306C; }
+    .telegram { color: #0088cc; }
+    .phone     { color: #2ecc71; }
+    .mobile    { color: #f39c12; }
+    .map       { color: #e74c3c; }
+
+    @media (max-width: 500px) {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+      }
+      .icon-link {
+        width: 70px;
+        height: 70px;
+        font-size: 26px;
+      }
+      .logo {
+        max-width: 120px;
+      }
+    }
   </style>
 </head>
 <body>
-
-  <!-- لوگو -->
-  <img src="logo.jpeg" alt="لوگو یاد معمار یزد" class="logo">
-
-  <!-- آیکون‌ها به صورت گرید 2 ستونه -->
-  <div class="grid">
-    <!-- اینستاگرام‌ها -->
-    <a class="icon-link instagram" href="https://www.instagram.com/yazd_memar?igsh=c212ZzQyM2l5NmJo" target="_blank" title="یاد معمار یزد">
-      <i class="fab fa-instagram"></i>
-    </a>
-
-    <a class="icon-link instagram" href="https://www.instagram.com/memarkavir_yazd?igsh=MTdzenkzcXMwb3p4bQ==" target="_blank" title="معمار کویر یزد">
-      <i class="fab fa-instagram"></i>
-    </a>
-
-    <!-- تلگرام -->
-    <a class="icon-link telegram" href="https://t.me/+fqfoMpusTZVlNzA0" target="_blank" title="تلگرام">
-      <i class="fab fa-telegram"></i>
-    </a>
-
-    <!-- تلفن دفتر -->
-    <a class="icon-link phone" href="tel:+983538332010" title="دفتر">
-      <i class="fas fa-phone"></i>
-    </a>
-
-    <!-- تلفن همراه -->
-    <a class="icon-link phone" href="tel:+989133558207" title="موبایل">
-      <i class="fas fa-mobile-alt"></i>
-    </a>
-
-    <!-- گوگل مپ -->
-    <a class="icon-link map" href="https://maps.app.goo.gl/W6bhDeSqWm3Dtxbj7" target="_blank" title="مکان ما در گوگل">
-      <i class="fas fa-map-marker-alt"></i>
-    </a>
+  <div class="container">
+    <img src="logo.jpeg" alt="لوگو" class="logo">
+    
+    <div class="grid">
+      <a class="icon-link instagram" href="https://www.instagram.com/yazd_memar?igsh=c212ZzQyM2l5NmJo" target="_blank" title="یاد معمار یزد">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a class="icon-link instagram" href="https://www.instagram.com/memarkavir_yazd?igsh=MTdzenkzcXMwb3p4bQ==" target="_blank" title="معمار کویر یزد">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a class="icon-link telegram" href="https://t.me/+fqfoMpusTZVlNzA0" target="_blank" title="تلگرام">
+        <i class="fab fa-telegram"></i>
+      </a>
+      <a class="icon-link phone" href="tel:+983538332010" title="دفتر">
+        <i class="fas fa-phone"></i>
+      </a>
+      <a class="icon-link mobile" href="tel:+989133558207" title="موبایل">
+        <i class="fas fa-mobile-alt"></i>
+      </a>
+      <a class="icon-link map" href="https://maps.app.goo.gl/W6bhDeSqWm3Dtxbj7" target="_blank" title="مکان ما در گوگل">
+        <i class="fas fa-map-marker-alt"></i>
+      </a>
+    </div>
   </div>
-
 </body>
 </html>
